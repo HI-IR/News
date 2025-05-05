@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_rv"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/item_rv">
+    <ImageView
+        android:layout_margin="15dp"
+        android:id="@+id/image_rv_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_rv_image"
+        android:orientation="vertical">
+        <TextView
+            android:paddingTop="12dp"
+            android:id="@+id/tv_rv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_color_pri"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/tv_rv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hint"
+            android:textSize="13sp"
+            android:textColor="@color/text_color_second"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

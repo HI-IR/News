@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageStyle">
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="username"
+        android:textColor="@color/text_color_pri"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/userimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="@color/text_color_pri"
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toEndOf="@id/guideline2"/>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        app:layout_constraintTop_toBottomOf="@id/content"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/text_color_second"
+            android:id="@+id/replyto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/comments2"/>
+
+    <ImageView
+        android:id="@+id/image_popularity"
+        android:src="@drawable/popularity2"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/comments"
+        app:layout_constraintTop_toBottomOf="@id/linear2"/>
+
+    <TextView
+        android:id="@+id/popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text_color_second"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toBottomOf="@id/linear2"
+        app:layout_constraintEnd_toStartOf="@id/image_popularity"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="45dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

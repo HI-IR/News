@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line">#1F2025</color>
+    <color name="background_color">#1A1B20</color>
+    <color name="background_color_pressed">#323335</color>
+    <color name="text_color_pri">#B0B1B6</color>
+    <color name="text_color_second">#595A5F</color>
+
+</resources>
