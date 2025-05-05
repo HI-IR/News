@@ -1,6 +1,7 @@
 ## APP功能的展示(GIF)
-
-
+![image](https://github.com/HI-IR/News/blob/master/app/images/1.0.gif)
+![image](https://github.com/HI-IR/News/blob/master/app/images/1.1.gif)
+![image](https://github.com/HI-IR/News/blob/master/app/images/1.2.gif)
 
 ## APP的简要介绍APP的功能，主要功能的实现思路
 
